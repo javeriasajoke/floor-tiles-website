@@ -6,14 +6,22 @@
 }
 
 @font-face {
-  font-family: "Benton_mod_Disp_Comp";
-  src: url(fonts/BentonModDispComp-Regular.otf);
+  font-family: "Benton-Mod-Dis-Cond-SB";
+  src: url(fonts/BentonModDispCond-Semibold.otf);
+}
+
+@font-face {
+  font-family: "Basic";
+  src: url(fonts/Basic-Regular.ttf);
 }
 
 .menu {
-  background: #F67280;
+  background: #413738;
   height: 4rem;
   width: 40%;
+  font-family: "Benton-Mod-Dis-Cond-SB";
+  font-size: 0.9em;
+  letter-spacing: 0.1em;
 }
 
 .menu ol {
@@ -37,29 +45,6 @@
   padding: 0.75rem 0;
 }
 
-.menu > ol > .menu-item:after {
-  content: "";
-  position: absolute;
-  width: 4px;
-  height: 4px;
-  border-radius: 50%;
-  bottom: 5px;
-  left: calc(50% - 2px);
-  background: #FECEAB;
-  will-change: transform;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  -webkit-transition: -webkit-transform 0.2s ease;
-  transition: -webkit-transform 0.2s ease;
-  transition: transform 0.2s ease;
-  transition: transform 0.2s ease, -webkit-transform 0.2s ease;
-}
-
-.menu > ol > .menu-item:hover:after {
-  -webkit-transform: scale(1);
-          transform: scale(1);
-}
-
 .menu-item {
   position: relative;
   line-height: 2.5rem;
@@ -76,7 +61,7 @@
 
 .sub-menu .menu-item {
   padding: 0.75rem 0;
-  background: #F67280;
+  background: #7a5b5e;
   opacity: 0;
   -webkit-transform-origin: bottom;
           transform-origin: bottom;
@@ -167,5 +152,90 @@ a {
 .navigation {
   height: 4rem;
   width: 100%;
+}
+
+.main-a {
+  position: relative;
+}
+
+.main-a:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ca0707;
+  visibility: hidden;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.main-a:hover:before {
+  visibility: visible;
+  width: 100%;
+}
+
+.logo {
+  width: 10%;
+  position: relative;
+}
+
+.logo .logoimg {
+  position: absolute;
+  width: 150px;
+  top: -5px;
+}
+
+.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 30px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.arrow {
+  height: 10px;
+  width: 10px;
+}
+
+.contact-info {
+  width: 40%;
+  background-color: #7a5b5e;
+  font-family: "Basic";
+  font-size: 0.8em;
+  letter-spacing: 0.1em;
+}
+
+.contact-info-ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  list-style: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 12px;
+}
+
+.arrow1 {
+  height: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.btn {
+  display: inline-block;
+  background-color: lawngreen;
+  padding: 10px 18px;
 }
 /*# sourceMappingURL=floorws.css.map */
