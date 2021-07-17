@@ -1,0 +1,67 @@
+@font-face {
+    font-family: "Basic";
+    src: url(fonts/Basic-Regular.ttf);
+  }
+
+  @font-face {
+    font-family: 'Butler_ExtraBold' ;
+    src: url(fonts/Butler_ExtraBold.otf);
+  }
+
+//logo
+
+.logo{
+    width: 10%;
+    position: relative;
+    .logoimg{
+      font-family: 'Butler_ExtraBold';
+      position: absolute;
+      //width: 150px;
+      top: -5px;
+      right: 1px;
+      font-size: 3.5em;
+      color: $color-2;
+      transform: translateX(20px);
+
+
+    }
+  }
+
+  //contact
+
+  .contact-info{
+    width: 35%;
+    //background-color: #7a5b5e;
+    font-family: "Basic";
+    font-size: 0.8em;
+    letter-spacing: 0.1em;
+    //margin-right: 30px;
+    &-ul{
+      display: flex;
+      justify-content: space-evenly;
+      list-style: none;
+      align-items: center;
+      padding-top: 12px;
+    }
+  }
+  .arrow1{
+    height: 20px;
+  }
+  a{
+    text-decoration: none;
+    color:$color-2;
+    &:hover{
+      color: $color-4;
+    }
+  }
+  .btn{
+    display: inline-block;
+    background-color: $color-3;
+    padding: 18px 35px;
+    color: white;
+    border: 1px solid $color-3;
+    &:hover{
+      background-color: white;
+      color: $color-3;
+    }
+  }
