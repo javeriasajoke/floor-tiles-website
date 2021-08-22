@@ -1,0 +1,19 @@
+.buttons{
+  display: block;
+  padding: 10px;
+  color: rgb(116, 116, 14);
+  width: 5rem;
+  margin-bottom: 5px;
+}
+
+.firstdiv{
+  color: rgb(36, 37, 9);
+}
+
+.class1{
+  color: brown;
+}
+
+.class2{
+  color: blueviolet;
+}

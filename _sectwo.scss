@@ -1,0 +1,152 @@
+.slick-dots li button:before{
+    font-size: 12px !important;
+    color: rgb(221, 183, 15) !important;
+  }
+  .slick-dots{
+      bottom: -85px !important;
+  }
+
+
+.section22{
+    width: 100%;
+    height: 100%;
+    margin-top: 8rem;
+}
+.section2{
+    width: 93%;
+   // background-color: goldenrod;
+    height: 97%;
+    margin-left: 4rem;
+    display: flex;
+}
+
+.section2-text, .section2-img{
+    height: 100%;
+    width: 100%;
+}
+
+.section2-text{
+    //background-color: hotpink;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 2rem;
+    .section2-btns{
+        //background-color: indigo;
+        display: flex;
+        justify-content: space-around;
+        height: 5rem;
+        width: 58%;
+        align-items: center;
+    }
+
+    .section2-h1{
+        font-size: 3em;
+        font-family: "Benton-Mod-Disp-Cond-Bold";
+        //background-color: khaki;
+        width: 68%;
+    }
+
+    .section2-p{
+        //background-color: lawngreen;
+        width: 70%;
+        font-family: "Basic";
+    }
+}
+
+.section2-btn1{
+    width: 8rem;
+}
+.section2-btn2{
+    width: 11rem;
+}
+
+.section2-img{
+    position: relative;
+    //background-color: lightgreen;
+    overflow: hidden;
+    .section2-img1{
+        background-color: $color-3;
+        height: 30rem;
+        width: 28rem;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .section2-img2{
+        //background-color: lightseagreen;
+        height: 30rem;
+        width: 28rem;
+        position: absolute;
+        top: 4rem;
+        background-image: url(images/sec2.jpg);
+        background-position: center;
+        background-size: cover;
+        transform: matrix(0.5, 0, 0, 0.5, 0, 0);
+    }
+}
+
+.section2-img3-div{
+    height: 30rem;
+    width: 28rem;
+    position: relative;
+    background-color: blue;
+    top: 4rem;
+    overflow: hidden;
+}
+
+.section2-img3{
+    height: 30rem;
+    width: 28rem;
+    position: absolute;
+    //top: 4rem;
+    background-image: url(images/sec2.jpg);
+    background-position: center;
+    background-size: cover;
+    //transform: matrix(2, 0, 0, 2, 0, 0);
+    //transform: scale(2);
+    //animation: zoomout 2s;
+}
+
+.addclasss{
+    animation: zoomout 2s;
+}
+.addclasss2{
+    animation-name: animation1;
+        animation-duration: 2s;
+}
+
+.div2{
+   // height: 10rem;
+   //width: 100%;
+    text-align: center;
+    margin: 8rem 0;
+    padding: 1rem 0;
+    //background-color: burlywood;
+    position: relative;
+   .line{
+       height: 1px;
+       background-color: $color-5;
+       position: absolute;
+       width: 17rem;
+       top: 2rem;
+   }
+}
+.text-div2{
+    font-family:"Benton-Mod-Disp-Cond-Bold";
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: .6rem;
+}
+@keyframes zoomout {
+    0%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+@keyframes animation1 {
+    0%{right: -3rem;}
+    100%{right: 0;}
+}

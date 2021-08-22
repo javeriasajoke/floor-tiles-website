@@ -2,7 +2,8 @@ html, body {
     font-size: 16px;
     font-family: "Fira Mono", monospace;
     margin: 0;
-    //margin-right: 1rem;
+    height: 100%;
+    width: 100%;
   }
   
   * {
@@ -18,16 +19,30 @@ html, body {
     text-decoration: none;
   }
   .navigation{
-    height: 4rem;
+    height: 6rem;
     display: flex;
-    margin-top: 15px;
+    //margin-top: 2px;
     justify-content: space-between;
     width: 100%;
+    position: fixed;
+    z-index: 9;
+    background-color: white;
+    align-items: center;
+    margin-top: 0%;
   }
 
   $color-1: #553739;
   $color-2: #14213d;
   $color-3: #fca311;
   $color-4: rgb(179, 179, 179);
+  $color-5: rgba(0, 0, 0, 0.295);
+  $color-6: rgb(8, 10, 8);
+
+
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+  }
 
  

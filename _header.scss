@@ -3,101 +3,137 @@
   src: url(fonts/BentonModDispCond-BoldIt.otf);
 }
 
-.navigation1{
-    display: flex;
-    //flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    margin-top: -30px;
-    .ulic{
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      flex-direction: column;
-      //background-color: rgb(227, 253, 253);
-      width: 3%;
-      height: 30%;
-      margin-top: -100px;
-      .liic{
-        display: block;
-        padding: 10px;
-        margin-right: 25px;
-      }
-    }
-  }
-  .contlogo{
-    height: 15px;
-    width: 15px;
-  }
-  
-  .imgdiv{
-    //background-color: #F8B195;
-    background-image:url(images/floor.jpg);
-    background-size: cover;
-    background-position: bottom;
-    height: 80%;
-    width: 90%;
-    margin-right: 20px;
-    position: relative;
 
+
+.headerr{
+  display: flex;
+  height: 100%;
+  width: 100%;
+  //background-color: lightpink;
+  //margin-top: 5%;
+  z-index: 2;
+  padding: 50px 0;
+}
+.s-infoo{
+   height: 65%;
+   //background-color: mediumblue;
+   width: 5%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   z-index: 16;
+   position: fixed;
+   background-color: transparent;
+   
+}
+.s-info{
+  width: 100%;
+  height: 30%;
+  //background-color: lime;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  //background-color: rgb(117, 46, 46);
+  &-img{
+    height: 15px;
     
   }
-  
- 
- 
+}
 
-  
+.img-container{
+  //background-color: lightcoral;
+  width: 93%;
+  height: 90%;
+  left: 5%;
 
-  
+}
 
- 
-  
- 
-  
-  
-  
+.img-container-1, .img-container-2{
+  height: 32rem;
+}
 
-  .imgdiv1{
-    position: absolute;
-    //left: 35%;
-    //top: 30%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    //background-color: yellow;
-    height: inherit;
-    width: inherit;
-    align-items: center;
-    transform: translateX(5%);
-    //transform: translateY(5%);
-  }
-  .imgdiv-div{
-    font-size: 2em;
-    letter-spacing: .1em;
-    font-family:'Benton-Mod-Disp-Cond-BoldIt';
+.img-container-1{
+  //background-color: rgb(17, 197, 188);
+  background-image: url(images/floor5.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.img-container-2{
+  //background-color: lightslategray;
+  background-image: url(images/floor4.jpg);
+  background-size: cover;
+  background-position: bottom;
+}
+
+.img-container-1-text{
+  //background-color: yellowgreen;
+  height: 70%;
+  position: absolute;
+  bottom: 10%;
+  left: 12%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 6;
+}
+.img-container-2-text{
+  //background-color: yellowgreen;
+  height: 70%;
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 3;
+}
+
+.img-container-heading{
+  font-size: 4em;
+  font-family: "Benton-Mod-Disp-Cond-BoldIt";
+  letter-spacing: 2px;
+  width: 70%;
+  text-align: center;
+  color: white;
+}
+
+.img-container-heading-h{
+  width: 10%;
+  //background-color: fuchsia;
+}
+
+.img-container-btn{
+  //background-color: firebrick;
+  height: 5rem;
+  width: 60rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+.img-container-btn1{
+  border: 1px solid $color-3;
+  height: 3rem;
+  width: 16rem;
+ // background-color: gold;
+  text-align: center;
+  padding: 15px;
+  color: $color-3;
+  background-color: white;
+  &:hover{
+    background-color: $color-3;
     color: white;
   }
-  .imgdiv-btn{
-    display: flex;
-    justify-content: space-between;
-    //background-color: yellow;
-    height: 20%;
-    width: 72%;
-    align-items: center;
-  }
-  .imgdiv-btn1{
-    border: 1px solid $color-3;
-    padding: 15px 20px;
-    height: 50px;
-    width: 230px;
-    text-align: center;
-    background-color: white;
-    color: $color-3;
-    &:hover{
-      background-color: $color-3;
-      color: white;
-    }
+}
 
-  }
+.btnn2{
+  height: 3rem;
+  width: 10rem;
+}
+

@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "sass floorws.scss floorws.css -w"
+    "sass": "sass floorws.scss floorws.css -w",
+    "build": "webpack --config prod.config.js"
   },
   "author": "",
   "license": "ISC",
